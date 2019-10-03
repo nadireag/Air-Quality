@@ -1,8 +1,10 @@
 # UNC Data Bootcamp - Project 1
 
-## Trends in Educational Attainment Across Selected Characteristics
+## Air Quality Index Status and Trends for Selected Cities
 
-The goal of this project is to determine whether there are trends between educational attainment and occupation across America. The questions we aim to answer through this project include whether certain occupations are more likely to complete higher forms of education. Additionally, we would like to answer if males or females are more likely to complete higher forms of education. Lastly, this project will also explore the relationship between employment rate and educational attainment. All of the data needed for this project will be provided by the US Census Survey of “Educational Attainment in the United States: 2018”. 
+The goal of this project is to determine the status and trends for air quality index for selected cities. 
+The questions we aim to answer through this project is, if weather has a significant impact on air quality. Is there a relationship between high temperatures and air quality index.  Additionally, we also explore the relationship between air pressure and air quality. 
+
 
 ### Team Members:
 
