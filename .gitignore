@@ -1,4 +1,10 @@
+# Config
+config.py
+config1.py
+config2.py
+
 # Byte-compiled / optimized / DLL files
+
 __pycache__/
 *.py[cod]
 *$py.class
