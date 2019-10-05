@@ -30,13 +30,15 @@ def make_df(city_list):
 
         #Pulls our response
         response = requests.get(query_url).json()
-        
+
         #Only puts the state in the table if it's from the U.S.
         if country == 'USA':
             state = response['data']['state']
         else:
             state = 'N/A'
-        
+            
+            
+            api_key
         #Pulls the necessary information (feel free to add or paramets)
         city = response['data']['city']
         country = response['data']['country']
@@ -46,15 +48,20 @@ def make_df(city_list):
         pressure = response['data']['current']['weather']['pr']
         wind_speed = response['data']['current']['weather']['ws']
         time = response['data']['current']['weather']['ts']
-        
+        longitude= response['data']['location']['coordinates'][0]
+        latitude= response['data']['location']['coordinates'][1]
         #Takes all that information and puts it into a dictionary whcih we will then append to our dict_list.
-        data_dict = {'City' : city, 'State' : state, 'Country' : country, 'Air Quality' : air_qual, 'Temperature' : temperature,
-             'Humidity': humidity, 'Pressure' : pressure, 'Wind Speed' : wind_speed, 'Time' : time}
+        data_dict = {'City' : city, 'State' : state, 'Country' : country, 'Longitude': longitude, 'Latitude': latitude, 
+                     'Air Quality' : air_qual, 'Temperature' : temperature, 
+                     'Humidity': humidity, 'Pressure' : pressure, 'Wind Speed' : wind_speed, 'Date' : time}
         dict_list.append(data_dict)
     
     #Turns our dict_list into a dataframe and returns it.
     dataframe = pd.DataFrame(dict_list)
+    dataframe["Date"] = pd.to_datetime(dataframe["Date"])
+    dataframe["Date"] = dataframe["Date"].dt.date
     return dataframe
+    
 
 #This is where our opportunity to loop into our cities.
 #Each city in the list must be formatted as [[city, state, country]]
