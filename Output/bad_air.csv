@@ -1,0 +1,6 @@
+,City,State/Province,Country,Longitude,Latitude,Air Quality,Temperature,Humidity,Pressure,Wind Speed,Date,Population
+22,Baghdad,Baghdad,Iraq,44.40088,33.34058,141,33,33,1014,2.1,2019-10-08,8765000
+8,Nanjing,Jiangsu,China,118.9207246044,32.0926314474,129,15,93,1023,1.0,2019-10-08,8460000
+24,Jakarta,Jakarta,Indonesia,106.79324,-6.236704,127,24,78,1012,2.1,2019-10-08,9608000
+4,Guangzhou,Guangdong,China,113.438526,23.101311,124,26,69,1016,2.0,2019-10-08,11548000
+2,Hangzhou,Zhejiang,China,120.1679188592,30.2920431172,118,18,77,1022,2.0,2019-10-08,7082000
