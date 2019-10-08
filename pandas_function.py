@@ -32,13 +32,10 @@ def make_df(city_list):
         response = requests.get(query_url).json()
 
         #Only puts the state in the table if it's from the U.S.
-        if country == 'USA':
-            state = response['data']['state']
-        else:
-            state = 'N/A'
+
             
             
-            api_key
+        api_key
         #Pulls the necessary information (feel free to add or paramets)
         city = response['data']['city']
         country = response['data']['country']
@@ -51,7 +48,7 @@ def make_df(city_list):
         longitude= response['data']['location']['coordinates'][0]
         latitude= response['data']['location']['coordinates'][1]
         #Takes all that information and puts it into a dictionary whcih we will then append to our dict_list.
-        data_dict = {'City' : city, 'State' : state, 'Country' : country, 'Longitude': longitude, 'Latitude': latitude, 
+        data_dict = {'City' : city, 'State/Province' : state, 'Country' : country, 'Longitude': longitude, 'Latitude': latitude, 
                      'Air Quality' : air_qual, 'Temperature' : temperature, 
                      'Humidity': humidity, 'Pressure' : pressure, 'Wind Speed' : wind_speed, 'Date' : time}
         dict_list.append(data_dict)
