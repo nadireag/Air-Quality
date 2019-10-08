@@ -41,7 +41,7 @@ terrible_gdf.plot(ax=ax, color='red', markersize=(terrible_gdf['Air Quality'])/4
 
 
 #Labels our graphs and saves the files.
-plt.title("Air Quality of The World's Largest Cities")
+plt.title("Air Quality of The World's Largest Cities (10/8/19)")
 plt.xlabel("Longitude")
 plt.ylabel("Latitude")
 #I could not get the legend to work unfortunately. Geopandas doesn't seem to really cater towards that from what I've seen.
