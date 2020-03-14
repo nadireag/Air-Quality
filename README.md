@@ -13,3 +13,9 @@ The questions we aim to answer through this project is, if weather has a signifi
 * Nadire
 * Shi
 * Ahnaf 
+
+![image](Output/air_quality.png)
+
+![image](Output/pollutant.png)
+
+![image](Output/aqi_temp.png)
